@@ -1,0 +1,12 @@
+.icons{
+    font-size: 80px;
+    margin-bottom: 20px;
+    color: hotpink;
+    margin-top: 20px;
+}
+p, li{
+    line-height: 1.8;
+}
+strong,em{
+    color: hotpink;
+}

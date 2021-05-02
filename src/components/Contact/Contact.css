@@ -1,0 +1,45 @@
+.user-form .form-group input{
+    background:transparent;
+    border: 1px solid white;
+    font-weight: 500;
+}
+#msg{
+    background:transparent;
+    border: 1px solid white;
+    font-weight: 500;
+}
+.btn-main .btn-user{
+    padding: 0 37px;
+    margin-left: 10px;
+}
+
+.btn-user.msg-btn{
+    background: transparent;
+    border: 1px solid hotpink;
+    color: white;
+}
+.btn-main:hover .btn-user.msg-btn{
+    background: hotpink none repeat scroll 0 0;
+    border: 1px solid hotpink;
+    color: white;
+    text-shadow: none;
+}
+
+.btn-user{
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    height: 42px;
+    line-height: 40px;
+    padding: 0 40px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+
+.icons{
+    font-size: 80px;
+    margin-bottom: 20px;
+    color: hotpink;
+    margin-top: 20px;
+}

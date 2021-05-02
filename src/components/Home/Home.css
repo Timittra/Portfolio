@@ -1,0 +1,40 @@
+.banner{
+    background: url('../../images/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 750px;
+    padding: 50px;
+}
+
+.bnr_overlay{
+    color: aliceblue;
+    text-align: right;
+    opacity: 0;
+}
+.banner:hover .bnr_overlay{
+   opacity: 1;
+}
+h1{
+    font-weight: 500;
+    color: hotpink;
+}
+#spin{
+    font-weight: 700;
+    color: lightcoral;
+}
+  /* @keyframes spinner {
+    0%{ 
+        content:"Front-End Web Developer";
+     }
+    50%{
+        content:"Web Designer";
+    } 
+}
+#spin {
+    color:hotpink;
+  }
+  #spin::after {
+    content:"";
+    animation: spinner 2s linear infinite;
+  } */

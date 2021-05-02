@@ -1,0 +1,43 @@
+.project_img{
+    position: relative;
+    overflow: hidden;
+    transition: all linear 0.3s;
+}
+.project_overlay{
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 33.33%;
+    height: 100%;
+    background: rgba(26, 24, 24, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear 0.3s;
+}
+
+.project_main:hover .project_overlay{
+    right: 0;
+}
+.project_overlay ul .links{
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    color: white;
+    transition: all linear 0.3s;
+}
+.project_overlay ul li{
+    list-style: none;
+}
+.project_overlay ul .links:hover{
+    background: hotpink;
+    border-color: hotpink;
+}
+.project_main:hover .project_img{
+   box-shadow: 0 0 5px rgba(244, 247, 247, 0.973)
+}
