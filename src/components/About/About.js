@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLaptop,faEye,faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+import { faWordpress } from '@fortawesome/free-brands-svg-icons';
 import './About.css';
 
 const useStyles = makeStyles((theme) => ({
@@ -53,12 +54,12 @@ const About = () => {
                 <div className="col-md-4">
                 <FontAwesomeIcon className='icons' icon={faEye} />
                 <h4>Web Design</h4>
-                <p>High quality pixel perfect design.</p>
+                <p>High quality pixel perfect design with responsiveness.</p>
                 </div>
                 <div className="col-md-4">
-                <FontAwesomeIcon className='icons' icon={faLaptopCode} />
-                <h4>Responsive Design</h4>
-                <p>Full responsiveness with all size of devices.</p>
+                <FontAwesomeIcon className='icons' icon={faWordpress} />
+                <h4>WordPress</h4>
+                <p>Theme customization for e-commerce, blog sites with landing page using elimentor.</p>
                 </div>
             </div>
             </div>

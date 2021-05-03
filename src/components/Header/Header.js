@@ -20,6 +20,9 @@ import LocalMallOutlinedIcon from '@material-ui/icons/LocalMallOutlined';
 import ReceiptOutlinedIcon from '@material-ui/icons/ReceiptOutlined';
 import MailOutlineOutlinedIcon from '@material-ui/icons/MailOutlineOutlined';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub,faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import './Header.css';
 
 const drawerWidth = 240;
 
@@ -50,17 +53,18 @@ const useStyles = makeStyles((theme) => ({
     drawerPaper: {
         width: drawerWidth,
         backgroundColor:'black',
+        overflowX: 'hidden',
     },
     content: {
         flexGrow: 1,
         padding: theme.spacing(3),
     },
     icons:{
-        color:'lightgray',
+        color:'hotpink',
     },
     links:{
-        listStyle:'none',
-        color:'white'
+       textDecoration:'none',
+        color:'white',
     }
 }));
 
@@ -131,6 +135,16 @@ function Header(props) {
                     </Link>
                  </ListItem>
             </List>
+            
+            <div className="row">
+                <div className="col-md-12">
+                    <span>
+                    <a href='https://github.com/Timittra' target='_blank' rel='noreferrer'><FontAwesomeIcon className='social-icons' icon={faGithub} /></a>
+                    <a href='https://www.linkedin.com/in/Timittra-Islam-Hridi/' target='_blank' rel='noreferrer'><FontAwesomeIcon className='social-icons' icon={faLinkedin} /></a>
+                    </span>
+                </div>
+            </div>
+
         </div>
     );
 

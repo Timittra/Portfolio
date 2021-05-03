@@ -23,16 +23,11 @@ const Resume = () => {
         <div className="container">
             <div className="row">
                 <div className="col-md-6 mt-5">
-                    <div className="important-links p-3">
-                        <h3 style={{fontWeight:'700'}}>Important Links:</h3>
-                            <a href='https://github.com/Timittra' target='_blank' rel='noreferrer'>GitHub</a>
-                            <a href='https://www.linkedin.com/in/Timittra-Islam-Hridi/' target='_blank' rel='noreferrer'> LinkedIn</a>
-                    </div>
                     <div className="skills p-3">
                     <h3>Skills</h3>
                     <ul>
                         <li><strong>Web Development:</strong> HTML5, CSS3, JAVASCRIPT ES6, React Js, BOOTSTRAP, Material UI,
-                            React Bootstrap, Node (crud operation)</li>
+                            React Bootstrap, Node (crud operation), WordPress theme customization.</li>
                         <li><strong>Database Management Systems:</strong> Mongodb, MySQL</li>
                         <li><strong>Programming Languages:</strong> C, C++, Javascript ES6, Java</li>
                         <li><strong>IDE:</strong> Visual Studio Code , NetBeans, Code Blocks, Eclipse, MS Visual Studio</li>

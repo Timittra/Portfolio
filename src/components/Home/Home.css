@@ -1,6 +1,5 @@
 .banner{
     background: url('../../images/banner.jpg');
-    background-position: center;
     background-size: cover;
     background-attachment: fixed;
     height: 750px;
@@ -23,18 +22,3 @@ h1{
     font-weight: 700;
     color: lightcoral;
 }
-  /* @keyframes spinner {
-    0%{ 
-        content:"Front-End Web Developer";
-     }
-    50%{
-        content:"Web Designer";
-    } 
-}
-#spin {
-    color:hotpink;
-  }
-  #spin::after {
-    content:"";
-    animation: spinner 2s linear infinite;
-  } */

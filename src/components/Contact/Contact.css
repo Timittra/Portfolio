@@ -2,11 +2,13 @@
     background:transparent;
     border: 1px solid white;
     font-weight: 500;
+    color: white;
 }
 #msg{
     background:transparent;
     border: 1px solid white;
     font-weight: 500;
+    color: white;
 }
 .btn-main .btn-user{
     padding: 0 37px;
