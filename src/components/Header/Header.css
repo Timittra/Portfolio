@@ -1,6 +1,9 @@
 .social-icons{
-    margin-top: 200px;
+    margin-top: 20px;
     font-size: 45px;
     padding-left: 15px;
     color: hotpink;
+}
+.MuiIconButton-label {
+    border: 2px solid white;
 }

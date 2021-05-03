@@ -1,4 +1,16 @@
-.user-form .form-group input{
+#contact{
+    margin-left: 240px;
+    margin-top: 10px;
+    padding: 100px;
+    background-color: #2C2D2F;
+    color: white;
+    height: 950px;
+    width: 100%;
+}
+#contact h1{
+    font-weight: 700;
+}
+#contact .user-form input{
     background:transparent;
     border: 1px solid white;
     font-weight: 500;
@@ -10,17 +22,17 @@
     font-weight: 500;
     color: white;
 }
-.btn-main .btn-user{
+#contact .btn-main .btn-user{
     padding: 0 37px;
     margin-left: 10px;
 }
 
-.btn-user.msg-btn{
+#contact .btn-user.msg-btn{
     background: transparent;
     border: 1px solid hotpink;
     color: white;
 }
-.btn-main:hover .btn-user.msg-btn{
+#contact .btn-main:hover .btn-user.msg-btn{
     background: hotpink none repeat scroll 0 0;
     border: 1px solid hotpink;
     color: white;
@@ -44,4 +56,44 @@
     margin-bottom: 20px;
     color: hotpink;
     margin-top: 20px;
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    .icons{
+        font-size: 70px;
+    }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    #contact{
+        margin-left: 0px;
+        height: 1200px;
+    }
+    #contact h1{
+        color: hotpink;
+    }
+}
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    #contact{
+        margin-left: 0px;
+        height: 1300px;
+    }
+    #contact h1{
+        color: hotpink;
+        font-size: 35px;
+    }
+    #contact .btn-main .btn-user{
+        padding: 0 27px;
+        margin-left: -35px;
+    }
+    .icons{
+        font-size: 50px;
+    }
+    #contact h5{
+     padding: -20px;
+    }
 }

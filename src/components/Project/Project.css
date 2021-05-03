@@ -3,6 +3,10 @@
     overflow: hidden;
     transition: all linear 0.3s;
 }
+.project_img img{
+    height: 350px;
+    width: 350px;
+}
 .project_overlay{
     position: absolute;
     top: 0;
@@ -41,3 +45,33 @@
 .project_main:hover .project_img{
    box-shadow: 0 0 5px rgba(244, 247, 247, 0.973)
 }
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+    .project_img img{
+        margin: 20px;
+    }
+ }
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    .project_img img{
+        margin: 20px;
+    }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    #project .project_img img{
+        margin: 20px;
+    }
+}
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    #project .project_img img{
+        height: 220px;
+        width: 100%;
+        margin: 20px;
+    }
+ }

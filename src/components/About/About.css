@@ -1,3 +1,13 @@
+.about{
+    margin-left: 240px;
+    background: #2C2D2F;
+    color: white;
+    height: 750px;
+    padding: 50px 0;
+}
+.about h1{
+    margin-top: 20px;
+}
 .icons{
     font-size: 80px;
     margin-bottom: 20px;
@@ -10,3 +20,40 @@ p, li{
 strong,em{
     color: hotpink;
 }
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+    .about{
+        height: 900px;
+    }
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    .about{
+        height: 1000px;
+    }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .about{
+        margin-left: 0px;
+        height: 1400px;
+    }
+    .about h1{
+        color: hotpink;
+     }
+}
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .about{
+        margin-left: 0px;
+        padding: 50px 0;
+        height: 1600px;
+    }
+    .about h1{
+       color: hotpink;
+    }
+ }

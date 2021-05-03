@@ -22,46 +22,44 @@ const Contact = () => {
 
 
     return (
-        <div style={{ marginLeft: '240px', marginTop: '10px', padding: '100px', background: '#2C2D2F', color: 'white', height: '950px' }}>
-            <div className="container">
-                <h1 style={{ fontWeight: '700' }}>Get in Touch.</h1>
+        <div  id="contact">
+            <div className="container row">
+                <h1>Get in Touch.</h1>
+                <div className="col-md-11 col-lg-11 col-sm-12 col-xs-12">
                 <form className="user-form" onSubmit={sendEmail}>
-                    <div className="row pt-5 mx-auto">
-                        <div className="col-md-7 form-group mx-auto">
-                            <input type="text" className="form-control" name="name" placeholder="Name" />
-                        </div>
-                        <div className="col-md-7 form-group pt-2 mx-auto">
-                            <input type="text" className="form-control" name="subject" placeholder="Subject" />
-                        </div>
-                        <div className="col-md-7 form-group pt-2 mx-auto">
-                            <input type="email" className="form-control" name="email" placeholder="Email" />
-                        </div>
-                        <div className="col-md-7 form-group pt-2 mx-auto">
-                            <textarea className="form-control" id="msg" cols='30' rows='6' name="message" placeholder="How can I help you?" />
-                        </div>
-                        <div className="col-md-7 form-group pt-3 mx-auto btn-main">
-                            <input type="submit" className="btn-user msg-btn" value="Send Message" />
-                        </div>
-
-                        <div className="row text-center pt-5">
-                            <h2 style={{ fontWeight: '700' }}>Services</h2>
-                            <div className="col-md-4">
-                                <FontAwesomeIcon className='icons' icon={faPaperPlane} />
-                                <h5>timittra.cse.aust@gmail.com</h5>
-                            </div>
-                            <div className="col-md-4">
-                                <FontAwesomeIcon className='icons' icon={faMapMarkerAlt} />
-                                <h5>Azimpur South City Corporation, Dhaka</h5>
-                            </div>
-                            <div className="col-md-4">
-                                <FontAwesomeIcon className='icons' icon={faPhone} />
-                                <h5>+880-1318050458</h5>
-                            </div>
-                        </div>
-
+                    <input type="text" className="form-control" name="name" placeholder="Name" />
+                    <br />
+                    <input type="text" className="form-control" name="subject" placeholder="Subject" />
+                    <br />
+                    <input type="email" className="form-control" name="email" placeholder="Email" />
+                    <br />
+                    <textarea className="form-control" id="msg" cols='30' rows='6' name="message" placeholder="How can I help you?" />
+                    <br />
+                    <div className="pt-3 btn-main">
+                        <input type="submit" className="btn-user msg-btn" value="Send Message" />
                     </div>
                 </form>
+                </div>
             </div>
+
+            <div className="container row text-center mt-5">
+        
+                            <h2 style={{ fontWeight: '700' }}>Services</h2>
+                            <div className="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                                <FontAwesomeIcon className='icons' icon={faPaperPlane} />
+                               <p>timittra.cse.aust@gmail.com</p>
+                            </div>
+                            <div className="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                                <FontAwesomeIcon className='icons' icon={faMapMarkerAlt} />
+                                <p>Azimpur South City Corporation, Dhaka</p>
+                            </div>
+                            <div className="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                                <FontAwesomeIcon className='icons' icon={faPhone} />
+                                <p>+880-1318050458</p>
+                            </div>
+                   
+            </div>
+
         </div>
     );
 };

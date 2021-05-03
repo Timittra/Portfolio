@@ -4,6 +4,7 @@
     background-attachment: fixed;
     height: 750px;
     padding: 50px;
+    margin-left: 240px;
 }
 
 .bnr_overlay{
@@ -13,6 +14,7 @@
 }
 .banner:hover .bnr_overlay{
    opacity: 1;
+   margin-top: 50px;
 }
 h1{
     font-weight: 500;
@@ -22,3 +24,50 @@ h1{
     font-weight: 700;
     color: lightcoral;
 }
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    .banner:hover .bnr_overlay{
+        margin-left:50px;
+     }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    .banner{
+        margin-left: 0px;
+    }
+    .banner:hover .bnr_overlay{
+        margin-top: 150px;
+     }
+     .bnr_overlay{
+        color: white;
+    }
+    h1{
+        color: white;
+    }
+    #spin{
+        font-weight: 900;
+        color: white;
+    }
+}
+
+ /* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .banner{
+        margin-left: 0px;
+    }
+    .banner:hover .bnr_overlay{
+        margin-top: 150px;
+     }
+     .bnr_overlay{
+        color: white;
+    }
+    h1{
+        color: white;
+    }
+    #spin{
+        font-weight: 900;
+        color: white;
+    }
+ }

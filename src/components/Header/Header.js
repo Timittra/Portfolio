@@ -1,4 +1,5 @@
 import React from 'react';
+import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -37,12 +38,21 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     appBar: {
-        [theme.breakpoints.up('sm')]: {
-            width: `calc(100% - ${drawerWidth}px)`,
-            marginLeft: drawerWidth,
-            backgroundColor: 'black'
-        },
-    },
+        transition: theme.transitions.create(['margin', 'width'], {
+          easing: theme.transitions.easing.sharp,
+          duration: theme.transitions.duration.leavingScreen,
+        }),
+      },
+      appBarShift: {
+        width: `calc(100% - ${drawerWidth}px)`,
+        transition: theme.transitions.create(['margin', 'width'], {
+          easing: theme.transitions.easing.easeOut,
+          duration: theme.transitions.duration.enteringScreen,
+        }),
+        marginLeft: drawerWidth,
+      },
+
+
     menuButton: {
         marginRight: theme.spacing(2),
         [theme.breakpoints.up('sm')]: {
@@ -54,11 +64,27 @@ const useStyles = makeStyles((theme) => ({
         width: drawerWidth,
         backgroundColor:'black',
         overflowX: 'hidden',
+        overflowY: 'hidden',
     },
     content: {
         flexGrow: 1,
         padding: theme.spacing(3),
+
+        transition: theme.transitions.create('margin', {
+            easing: theme.transitions.easing.sharp,
+            duration: theme.transitions.duration.leavingScreen,
+          }),
+          marginLeft: -drawerWidth,
     },
+
+    contentShift: {
+        transition: theme.transitions.create('margin', {
+          easing: theme.transitions.easing.easeOut,
+          duration: theme.transitions.duration.enteringScreen,
+        }),
+        marginRight: 0,
+      },
+
     icons:{
         color:'hotpink',
     },
@@ -75,8 +101,12 @@ function Header(props) {
     const [mobileOpen, setMobileOpen] = React.useState(false);
 
     const handleDrawerToggle = () => {
-        setMobileOpen(!mobileOpen);
+        setMobileOpen(true);
     };
+
+    const handleDrawerClose = () => {
+        setMobileOpen(false);
+      };
 
     const drawer = (
         <div>
@@ -153,19 +183,24 @@ function Header(props) {
     return (
         <div className={classes.root}>
             <CssBaseline />
-            <AppBar position="fixed" style={{ backgroundColor: 'black' }} className={classes.appBar}>
+            <AppBar position="fixed" style={{ backgroundColor: 'black' }} className={clsx(classes.appBar, {
+          [classes.appBarShift]: mobileOpen,
+        })}>
                 <Toolbar>
                     <IconButton
                         color="inherit"
+                        border="2px solid white"
                         aria-label="open drawer"
                         edge="start"
                         onClick={handleDrawerToggle}
-                        className={classes.menuButton}
+                        // className={classes.menuButton}
+                        className={clsx(mobileOpen && classes.hide)}
                     >
-                        <MenuIcon />
+                        <MenuIcon border="2px solid white" />
                     </IconButton>
                 </Toolbar>
             </AppBar>
+      
             <nav className={classes.drawer} aria-label="mailbox folders">
                 <Hidden smUp implementation="css">
                     <Drawer
@@ -173,7 +208,7 @@ function Header(props) {
                         variant="temporary"
                         anchor={theme.direction === 'rtl' ? 'right' : 'left'}
                         open={mobileOpen}
-                        onClose={handleDrawerToggle}
+                        onClose={handleDrawerClose}
                         classes={{
                             paper: classes.drawerPaper,
                         }}

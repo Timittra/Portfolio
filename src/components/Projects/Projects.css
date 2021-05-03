@@ -1,0 +1,40 @@
+.projects{
+    margin-left: 240px;
+    background-color: #2C2D2F;
+    padding: 170px 50px;
+    height: 750px;
+}
+#project h1{
+    color: hotpink;
+    padding-bottom: 10px;
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+    .projects{
+        height: 1420px;
+    }
+ }
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    .projects{
+        height: 1420px;
+    }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    .projects{
+        margin-left:0px;
+        height: 1450px;
+    }
+}
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .projects{
+        margin-left:0px;
+        height: 1050px;
+    }
+ }
