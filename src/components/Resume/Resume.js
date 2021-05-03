@@ -22,7 +22,7 @@ const Resume = () => {
                             </ul>
                         </div>
 
-                        <div className="projects p-3">
+                        <div className="resume-projects p-3">
                             <h3>Projects</h3>
                             <ul>
                                 <li><strong><h4>Museum’s Galaxy (2021, April)</h4></strong>
