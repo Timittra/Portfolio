@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import fakeData from '../../fakeData/fakeData';
 import ReactPlayer from 'react-player/youtube';
+import './Detail.css';
 
 
 const linkStyles = {
@@ -107,16 +108,18 @@ const Detail = () => {
     });
 
     return (
-        <div style={{marginLeft:'240px', padding:'100px 40px', color:'white', background:'#2C2D2F'}}>
-           <div className="container text-center">
-                <h1>{title}</h1>
+        <div id='detail-page'>
+           <div className="container row text-center">
+              <div className="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+              <h1 style={{fontWeight:'700'}}>{title}</h1>
                 <p>{description}</p>
-                <ReactPlayer style={{margin:'0 auto', padding:'20px'}} loop='true' url={video} />
+                <ReactPlayer id='video-player' width="100%" loop='true' url={video} />
                 <div className="btn-main">
-                    <button className="btn-user msg-btn"><a className='text-white' href={liveSite} target='_blank' rel='noreferrer'> Preview </a></button>
-                    <button className="btn-user msg-btn"><a className='text-white' href={clientCode} target='_blank' rel='noreferrer'> Client Side</a></button>
-                    <button className="btn-user msg-btn"><a className='text-white' href={serverCode} target='_blank' rel='noreferrer'> Server Side</a></button>
+                    <button style={{backgroundColor:'hotpink'}} className="btn-user msg-btn"><a className='text-white' href={liveSite} target='_blank' rel='noreferrer'> Preview </a></button>
+                    <button style={{backgroundColor:'hotpink'}} className="btn-user msg-btn"><a className='text-white' href={clientCode} target='_blank' rel='noreferrer'> Client Side</a></button>
+                    <button style={{backgroundColor:'hotpink'}} className="btn-user msg-btn"><a className='text-white' href={serverCode} target='_blank' rel='noreferrer'> Server Side</a></button>
                 </div>
+              </div>
             </div>
         </div>
     );
