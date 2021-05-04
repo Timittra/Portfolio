@@ -30,7 +30,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className="row text-center">
-                    <h2 style={{ fontWeight: '700' }}>Services</h2>
+                    <h2 style={{ fontWeight: '700' }}>Technical Skills</h2>
                     <div className="col-md-4 col-lg-4 col-sm-12 col-xs-12">
                         <FontAwesomeIcon className='icons' icon={faLaptopCode} />
                         <h4>Web Development</h4>

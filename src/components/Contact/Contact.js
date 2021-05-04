@@ -33,7 +33,7 @@ const Contact = () => {
                     <br />
                     <input type="email" className="form-control" name="email" placeholder="Email" />
                     <br />
-                    <textarea className="form-control" id="msg" cols='30' rows='6' name="message" placeholder="How can I help you?" />
+                    <textarea className="form-control" id="msg" cols='30' rows='6' name="message" placeholder="Message" />
                     <br />
                     <div className="pt-3 btn-main">
                         <input type="submit" className="btn-user msg-btn" value="Send Message" />
@@ -44,7 +44,7 @@ const Contact = () => {
 
             <div className="container row text-center mt-5">
         
-                            <h2 style={{ fontWeight: '700' }}>Services</h2>
+                            <h2 style={{ fontWeight: '700' }}>Find Me At</h2>
                             <div className="col-md-4 col-lg-4 col-sm-12 col-xs-12">
                                 <FontAwesomeIcon className='icons' icon={faPaperPlane} />
                                <p>timittra.cse.aust@gmail.com</p>
